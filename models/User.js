@@ -19,6 +19,10 @@ const User = sequelize.define('User', {
     type: DataTypes.STRING,
     allowNull: false,
   },
+  hash: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
   
 }, {
   hooks: {
